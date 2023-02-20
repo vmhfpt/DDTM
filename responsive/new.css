@@ -14,11 +14,11 @@
 .green {
     background: green;
 }
-
-
-textarea:focus {
-    outline: none;
+.black {
+    background: rgb(61, 61, 61);
 }
+
+
 
 
 
@@ -76,7 +76,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    
+  
    
     .row>* {
         flex-shrink: 0;
@@ -101,7 +101,21 @@ body {
     .col-10 {width: 83.33% !important;}
     .col-11 {width: 91.66% !important;}
     .col-12 {width: 100% !important;}
-   
+    .app-new__content{
+        flex-direction: column;
+    }
+    .app-new__content-item-third-item {
+        flex-direction: column;
+    }
+    .app-new__content-item-right-recruitment-content-item {
+        justify-content: space-between;
+    }
+    .app-new__content-item-right-content {
+        flex-direction: row;
+    }
+    .mt-1 {
+        margin-top : 15px !important;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -128,7 +142,21 @@ body {
     .col-sm-10 {width: 83.33%;}
     .col-sm-11 {width: 91.66%;}
     .col-sm-12 {width: 100%;}
-    
+    .app-new__content{
+        flex-direction: column;
+    }
+    .app-new__content-item-third-item {
+        flex-direction: column;
+    }
+    .app-new__content-item-right-recruitment-content-item {
+        justify-content: space-between;
+    }
+    .app-new__content-item-right-content {
+        flex-direction: row;
+    }
+    .mt-1 {
+        margin-top : 15px !important;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -151,7 +179,22 @@ body {
   .col-md-10 {width: 83.33%;}
   .col-md-11 {width: 91.66%;}
   .col-md-12 {width: 100%;}
- 
+  .mt-1 {
+    margin : 0px !important;
+  }
+  /* .app-new__content .app-new__content-item:first-child {
+    width : 67%;
+ }
+ .app-new__content .app-new__content-item:last-child {
+     width : 33%;
+  } */
+  .app-new__content-item-third-item {
+    flex-direction: row;
+  }
+
+  .app-new__content-item  {
+    width : 100%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -174,8 +217,18 @@ body {
     .col-lg-10 {width: 83.33%;}
     .col-lg-11 {width: 91.66%;}
     .col-lg-12 {width: 100%;}
-    
-  
+    .app-new__content .app-new__content-item:first-child {
+        width : 73%;
+     }
+     .app-new__content .app-new__content-item:last-child {
+         width : 27%;
+      }
+  .app-new__content {
+    flex-direction: row;
+  }
+  .app-new__content-item-right-content{
+    flex-direction: column;
+  }
 }
  
 /* Extra large devices (large laptops and desktops, 1200px and up) */

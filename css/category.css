@@ -16,7 +16,9 @@
 
 
 
-
+.app-phone-suggest {
+    margin-top : 20px;
+}
 
 .container-filter__brand {
     width : 100%;
@@ -167,6 +169,7 @@
     color: #20863D;
 }
 .app-phone-suggest__product-paginate {
+    margin : 20px 0px;
     display : flex;
     justify-content: center;
 } 

@@ -72,9 +72,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        background: rgba(0, 0, 0, 0.408);
-    }
+    
    
     .row>* {
         flex-shrink: 0;
@@ -84,9 +82,7 @@ body {
         padding-left: calc(1.5rem * .5);
         margin-top: 0;
     }
-    .container {
-        width : 100%;
-    }
+    
     .col-1 {width: 8.33% !important;}
     .col-2 {width: 16.66% !important;}
     .col-3 {width: 25% !important;}
@@ -99,28 +95,81 @@ body {
     .col-10 {width: 83.33% !important;}
     .col-11 {width: 91.66% !important;}
     .col-12 {width: 100% !important;}
+    .app-detail-bottom__content {
+   
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .app-detail-bottom__content .app-detail-bottom__item:nth-child(2) {
+       grid-area: 1 / 1 / 2 /2;
+    }
     .position-carousel .app-detail-top__content-carousel-top-detail img {
         width : 100% !important;
     }
     .position-carousel .app-detail-top__content-carousel-bottom-detail img {
         width : 65px !important;
     }
+
+    .app-detail-top__center {
+        margin-top : 20px;
+    }
+    .app-detail-bottom__item-review-content {
+        flex-direction: column;
+        gap : 0px;
+       align-items: center !important;
+       justify-content: center !important;
+    }
+ .app-detail-bottom__item-review-content .app-detail-bottom__item-review-content-item:nth-child(2){
+
+    width : 85%;
+   
+  }
+  .app-detail-promotion__tab {
+    margin-top :17px;
+  }
+  
+  .app-detail-bottom__content {
+   
+    grid-template-columns: 100%;
+}
+.app-detail-bottom__item-review-content-item {
+    padding : 0px;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body {
-        background: rgba(255, 255, 0, 0.505);
+    .app-detail-top__center {
+        margin-top : 20px;
     }
+    .app-detail-bottom__item-review-content {
+        flex-direction: column;
+        gap : 0px;
+       align-items: center !important;
+       justify-content: center !important;
+    }
+ .app-detail-bottom__item-review-content .app-detail-bottom__item-review-content-item:nth-child(2){
+
+    width : 85%;
+   
+  }
+  .app-detail-promotion__tab {
+    margin-top :17px;
+  }
+  
+  .app-detail-bottom__content {
+   
+    grid-template-columns: 70% auto;
+}
+
+   
     .row>* {
         max-width: 100%;
         padding-right: calc(1.5rem * .5);
         padding-left: calc(1.5rem * .5);
         margin-top: 0;
     }
-    .container {
-        width : 100%;
-    }
+    
     .col-sm-1 {width: 8.33%;}
     .col-sm-2 {width: 16.66%;}
     .col-sm-3 {width: 25%;}
@@ -145,12 +194,8 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .container {
-        width : 100%;
-    }
-    body {
-        background: rgba(4, 0, 255, 0.478);
-    }
+   
+   
   
     
   .col-md-1 {width: 8.33%;}
@@ -165,27 +210,51 @@ body {
   .col-md-10 {width: 83.33%;}
   .col-md-11 {width: 91.66%;}
   .col-md-12 {width: 100%;}
- 
+  .app-new-suggest__center {
+    width : 100%;
+  }
+   
 
   .app-detail-bottom__content {
    
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 70% auto;
 }
 
 .app-detail-bottom__content .app-detail-bottom__item:nth-child(2) {
     grid-area: 1 / 2 / 3 / 3;
 }
+
+
+
+.app-detail-top__center {
+    margin-top : 20px;
+}
+.app-detail-bottom__item-review-content {
+    flex-direction: row;
+    gap : 45px;
+   align-items: center !important;
+   justify-content: center !important;
+}
+.app-detail-bottom__item-review-content .app-detail-bottom__item-review-content-item:nth-child(2){
+
+width : 100%;
+
+}
+.app-detail-promotion__tab {
+margin-top :17px;
+}
+
+.app-detail-bottom__content {
+
+grid-template-columns: 70% auto;
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .container {
-        width : 100%;
-    }
+   
     
-    body {
-        background: rgba(255, 0, 0, 0.467);
-    }
+  
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
     .col-lg-3 {width: 25%;}
